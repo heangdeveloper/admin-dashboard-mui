@@ -1,0 +1,113 @@
+{
+    "sidebar": {
+        "overview": {
+            "name": "Overview",
+            "item": {
+                "dashboard": "Dashboard"
+            }
+        },
+        "management": {
+            "name": "Management",
+            "item": {
+                "customers": {
+                    "name": "Customers",
+                    "subMenu": {
+                        "membership": "Membership",
+                        "walkin": "Walk-in"
+                    }
+                },
+                "e-commerce": {
+                    "name": "E-Commerce",
+                    "subMenu": {
+                        "product": "Products",
+                        "categorie": "Categories"
+                    }
+                },
+                "gym": {
+                    "name": "Gym",
+                    "subMenu": {
+                        "package": "Package",
+                        "trainer": "Trainer",
+                        "classe": "Class",
+                        "branch": "Branch"
+                    }
+                },
+                "authentication": {
+                    "name": "Authentication",
+                    "subMenu": {
+                        "user": "User",
+                        "role": "Role",
+                        "permission": "Permission"
+                    }
+                },
+                "report": {
+                    "name": "Report",
+                    "subMenu": {
+                        "package": "Income",
+                        "trainer": "Expenses"
+                    }
+                }
+            }
+        }
+    },
+    "loginPage": {
+        "login": "Login",
+        "dont_have_account": "Don't have an account?",
+        "forgot_password": "Forgot Password?",
+        "keep_me_sign_in": "Keep me sign in",
+        "form": {
+            "username":  {
+                "label": "Username",
+                "placeholder": "Enter username"
+            },
+            "password":  {
+                "label": "Password",
+                "placeholder": "Enter password"
+            },
+            "validation": {
+                "username": {
+                    "nonempty": "Username is required"
+                },
+                "password": {
+                    "nonempty": "Password is required"
+                }
+            }
+        },
+        "button": {
+            "login": "Login",
+            "logging": "Logging in..."
+        }
+    },
+    "notification": {
+        "title": {
+            "notification": "Notification",
+            "make_all_as_read": "Make all as read"
+        },
+        "subheader": {
+            "all": "All",
+            "unread": "Unread"
+        },
+        "footer": {
+            "view_all_notifications": "View All Notifications"
+        }
+    },
+    "datatable": {
+        "processing": "Processing...",
+        "loadingRecords": "Loading...",
+        "zeroRecords": "No matching records found",
+        "emptyRecords": "No data available in table",
+        "searchPlaceholder": "Search data"
+    },
+    "walkinPage": {
+        "table": {
+            "header": {
+                "name": "Name",
+                "branch": "Branch",
+                "package": "Package",
+                "quantity": "Quantity",
+                "price": "Price",
+                "action": "Action"
+            }
+        }
+    }
+}

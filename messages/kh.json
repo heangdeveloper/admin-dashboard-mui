@@ -1,0 +1,113 @@
+{
+    "sidebar": {
+        "overview": {
+            "name": "ទូទៅ",
+            "item": {
+                "dashboard": "ផ្ទាំងគ្រប់គ្រង"
+            }
+        },
+        "management": {
+            "name": "គ្រប់គ្រង",
+            "item": {
+                "customers": {
+                    "name": "អតិថិជន",
+                    "subMenu": {
+                        "membership": "សមាជិក",
+                        "walkin": "ចូលហាត់ភ្លាមៗ"
+                    }
+                },
+                "e-commerce": {
+                    "name": "លក់ទំនិញ",
+                    "subMenu": {
+                        "product": "ផលិតផល",
+                        "categorie": "ប្រភេទ"
+                    }
+                },
+                "gym": {
+                    "name": "ក្លឹបហាត់ប្រាណ",
+                    "subMenu": {
+                        "package": "កញ្ចប់ហាត់ប្រាណ",
+                        "trainer": "គ្រូបង្វឹក",
+                        "classe": "ថ្នាក់",
+                        "branch": "សាខា"
+                    }
+                },
+                "authentication": {
+                    "name": "ផ្ទៀងផ្ទាត់អត្តសញ្ញាណ",
+                    "subMenu": {
+                        "user": "អ្នកប្រើប្រាស់",
+                        "role": "តួនាទី",
+                        "permission": "ការអនុញ្ញាត"
+                    }
+                },
+                "report": {
+                    "name": "របាយការណ៍",
+                    "subMenu": {
+                        "package": "ប្រាក់ចំណូល",
+                        "trainer": "ការចំណាយ"
+                    }
+                }
+            }
+        }
+    },
+    "loginPage": {
+        "login": "ចូលគណនី",
+        "dont_have_account": "មិនទាន់មានគណនីមែនទេ?",
+        "forgot_password": "ភ្លេចពាក្យសម្ងាត់?",
+        "keep_me_sign_in": "រក្សាខ្ញុំឱ្យចូលគណនី",
+        "form": {
+            "username": {
+                "label": "ឈ្មោះអ្នកប្រើប្រាស់",
+                "placeholder": "បញ្ចូលឈ្មោះអ្នកប្រើប្រាស់"
+            },
+            "password": {
+                "label": "ពាក្យសម្ងាត់",
+                "placeholder": "បញ្ចូលពាក្យសម្ងាត់"
+            },
+            "validation": {
+                "username": {
+                    "nonempty": "សូមបញ្ចូលឈ្មោះអ្នកប្រើប្រាស់"
+                },
+                "password": {
+                    "nonempty": "សូមបញ្ចូលពាក្យសម្ងាត់"
+                }
+            }
+        },
+        "button": {
+            "login": "ចូលគណនី",
+            "logging": "កំពុងចូល..."
+        }
+    },
+    "notification": {
+        "header": {
+            "notification": "ការជូនដំណឹង",
+            "make_all_as_read": "សម្គាល់ថាបានអានទាំងអស់"
+        },
+        "subheader": {
+            "all": "ទាំងអស់",
+            "unread": "មិនទាន់អាន"
+        },
+        "footer": {
+            "view_all_notifications": "មើលការជូនដំណឹងទាំងអស់"
+        }
+    },
+    "datatable": {
+        "processing": "កំពុងដំណើរការ...",
+        "loadingRecords": "កំពុងផ្ទុកទិន្នន័យ...",
+        "zeroRecords": "មិនរកឃើញទិន្នន័យដែលត្រូវគ្នាទេ",
+        "emptyRecords": "មិនមានទិន្នន័យក្នុងតារាងនេះទេ",
+        "searchPlaceholder": "ស្វែងរកទិន្នន័យ"
+    },
+    "walkinPage": {
+        "table": {
+            "header": {
+                "name": "ឈ្មោះ",
+                "branch": "សាខា",
+                "package": "កញ្ចប់",
+                "quantity": "ចំនួន",
+                "price": "តម្លៃ",
+                "action": "សកម្មភាព"
+            }
+        }
+    }
+}
