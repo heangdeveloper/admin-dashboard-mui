@@ -50,6 +50,20 @@
             }
         }
     },
+    "header": {
+        "profile": {
+            "dark_mode": "Dark Mode",
+            "language": {
+                "label": "Language",
+                "value": {
+                    "english": "English",
+                    "khmer": "Khmer"
+                }
+            },
+            "setting": "Setting",
+            "logout": "Logout"
+        }
+    },
     "loginPage": {
         "login": "Login",
         "dont_have_account": "Don't have an account?",
@@ -79,7 +93,7 @@
         }
     },
     "notification": {
-        "title": {
+        "header": {
             "notification": "Notification",
             "make_all_as_read": "Make all as read"
         },

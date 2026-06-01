@@ -15,6 +15,11 @@ export const createTypography = (locale: string) => {
             fontWeight: 600,
             lineHeight: 1.5
         },
+        h4: {
+            fontSize: '14px',
+            fontWeight: 500,
+            lineHeight: "16px"
+        },
         h5: {
             fontSize: '16px',
             fontWeight: 600,
@@ -24,6 +29,16 @@ export const createTypography = (locale: string) => {
             fontSize: '14px',
             fontWeight: 400,
             lineHeight: 1.57
+        },
+        subtitle1: {
+            fontWeight: 500,
+            fontSize: "12px",
+            lineHeight: 1.57,
+        },
+        subtitle2: {
+            fontWeight: 500,
+            fontSize: "12px",
+            lineHeight: 1,
         },
         body1: {
             fontSize: '14px',
@@ -40,10 +55,5 @@ export const createTypography = (locale: string) => {
             fontWeight: 400,
             lineHeight: 1.66,
         },
-        subtitle2: {
-            fontWeight: 500,
-            fontSize: "12px",
-            lineHeight: 1.57,
-        }
     }
 }

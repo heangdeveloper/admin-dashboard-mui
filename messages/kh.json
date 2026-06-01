@@ -50,6 +50,20 @@
             }
         }
     },
+    "header": {
+        "profile": {
+            "dark_mode": "ផ្ទៃងងឹត",
+            "language": {
+                "label": "ភាសា",
+                "value": {
+                    "english": "អង់គ្លេស",
+                    "khmer": "ខ្មែរ"
+                }
+            },
+            "setting": "ការកំណត់",
+            "logout": "ចាកចេញ"
+        }
+    },
     "loginPage": {
         "login": "ចូលគណនី",
         "dont_have_account": "មិនទាន់មានគណនីមែនទេ?",
@@ -81,7 +95,7 @@
     "notification": {
         "header": {
             "notification": "ការជូនដំណឹង",
-            "make_all_as_read": "សម្គាល់ថាបានអានទាំងអស់"
+            "make_all_as_read": "អានទាំងអស់"
         },
         "subheader": {
             "all": "ទាំងអស់",

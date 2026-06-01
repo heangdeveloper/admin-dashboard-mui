@@ -36,6 +36,11 @@ export default function Page() {
                     <DataTableColumnHeader column={column} label={t("table.header.name")}/>
                 ),
                 cell: ({ cell }) => <div className="w-full py-4">{cell.getValue<Customer["name"]>()}</div>,
+                meta: {
+                    label: "Title",
+                    placeholder: "Search titles...",
+                    variant: "text",
+                }
             },
             {
                 id: "branch",
@@ -82,9 +87,7 @@ export default function Page() {
                     )
                 },
             },
-        ],
-        [],
-    );
+    ],[]);
 
     const data: Customer[] = [];
     return (

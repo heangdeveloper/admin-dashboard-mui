@@ -5,8 +5,6 @@ import Stack from "@mui/material/Stack"
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Button from "@mui/material/Button"
-import Avatar from "@mui/material/Avatar";
 import GlobalStyles from '@mui/material/GlobalStyles';
 
 import {
@@ -15,6 +13,7 @@ import {
 
 import Notification from "@/components/layout/Header/Notification";
 import FullScreen from "@/components/layout/Header/FullScreen";
+import Profile from "@/components/layout/Header/Profile"
 import { toggleSidebar } from "@/theme/sidbar-utils";
 
 export default function Header() {
@@ -67,20 +66,7 @@ export default function Header() {
                                     marginLeft: "auto"
                                 }}
                             >
-                                <Button
-                                    sx={{
-                                        minWidth: "0",
-                                        padding: "calc(0.25 * var(--spacing))",
-                                    }}
-                                >
-                                    <Avatar
-                                        sx={{
-                                            width: "34px",
-                                            height: "34px"
-                                        }}
-                                        src="https://keenthemes.com/keen/demo1/assets/media/avatars/300-3.jpg" alt=""
-                                    />
-                                </Button>
+                                <Profile/>
                             </Box>
                         </Stack>
                     </Stack>

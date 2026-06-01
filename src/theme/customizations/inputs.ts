@@ -1,7 +1,4 @@
 import { Theme, Components } from '@mui/material'
-import CheckBoxOutlineBlankRoundedIcon from '@mui/icons-material/CheckBoxOutlineBlankRounded';
-import CheckRoundedIcon from '@mui/icons-material/CheckRounded';
-import RemoveRoundedIcon from '@mui/icons-material/RemoveRounded';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 
 export const inputsCustomizations: Components<Theme> = {
@@ -109,5 +106,33 @@ export const inputsCustomizations: Components<Theme> = {
         defaultProps: {
             IconComponent: KeyboardArrowDownOutlinedIcon,
         },
+    },
+    MuiSwitch: {
+        styleOverrides: {
+            root: {
+                  width: 34,
+                  height: 20,
+                  marginRight: 0,
+                  padding: 0,
+            },
+            switchBase: ({ theme }) => ({
+                padding: '2px !important',
+                "&.Mui-checked": {
+                    transform: "translateX(14px) !important",
+                    color: (theme.vars || theme).palette.primary.contrastText,
+                    '& + .MuiSwitch-track': {
+                        opacity: 1,
+                    },
+                }
+            }),
+            thumb: {
+                width: 16,
+                height: 16
+            },
+            track: ({ theme }) => ({
+                borderRadius: 16,
+                backgroundColor: (theme.vars || theme).palette.primary.light
+            }),
+        }
     }
 }

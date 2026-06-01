@@ -12,8 +12,6 @@ import {
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import OutlinedInput from '@mui/material/OutlinedInput';
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 import Table from '@mui/material/Table';
@@ -22,8 +20,6 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-
-import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 
 import DataTablePagination from "@/components/datatable/data-table-pagination";
 
@@ -66,7 +62,7 @@ export default function DataTable<TData, TValue>({
                 <OutlinedInput placeholder="Search 100 records..."/>
                 <Stack>
 
-                    <Button variant="contained" size="medium" color="primary" disableElevation startIcon={<AddOutlinedIcon />}><Typography variant="body1" component="span">Add Customer</Typography></Button>
+
                 </Stack>
             </Stack>
             <Stack>

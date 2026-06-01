@@ -63,6 +63,9 @@ export const dataDisplayCustomizations: Components<Theme> = {
                 borderWidth: 1,
                 borderStyle: "solid",
                 borderColor: "transparent",
+                "& .MuiChip-label": {
+                    padding: 0
+                },
                 variants: [
                     {
                         props: {

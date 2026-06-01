@@ -46,55 +46,57 @@ export default function LanguageSwitcher({ changeLocalAction, currentLocale }: P
                         >
                             {({ TransitionProps }) => (
                                 <Fade {...TransitionProps} timeout={350}>
-                                    <ClickAwayListener
-                                        onClickAway={() => popupState.close()}
-                                    >
-                                        <Paper>
-                                            <List
-                                                sx={(theme) => ({
-                                                    width: "100%",
-                                                    minWidth: "200px",
-                                                    backgroundColor: (theme.vars || theme).palette.background.paper,
-                                                    borderRadius: (theme.vars || theme).shape.borderRadius,
-                                                    [theme.breakpoints.up("md")]: {
-                                                        maxWidth: "290px"
-                                                    },
-                                                })}
-                                            >
-                                                {["en", "kh"].map((lang) => (
-                                                    <ListItemButton
-                                                        key={lang}
-                                                        onClick={() => {
-                                                            changeLocalAction(lang as Locale);
-                                                            popupState.close();
-                                                        }}
-                                                        sx={{
-                                                            paddingLeft: "16px"
-                                                        }}
-                                                    >
-                                                        <ListItemText
+                                    <>
+                                        <ClickAwayListener
+                                            onClickAway={() => popupState.close()}
+                                        >
+                                            <Paper>
+                                                <List
+                                                    sx={(theme) => ({
+                                                        width: "100%",
+                                                        minWidth: "200px",
+                                                        backgroundColor: (theme.vars || theme).palette.background.paper,
+                                                        borderRadius: (theme.vars || theme).shape.borderRadius,
+                                                        [theme.breakpoints.up("md")]: {
+                                                            maxWidth: "290px"
+                                                        },
+                                                    })}
+                                                >
+                                                    {["en", "kh"].map((lang) => (
+                                                        <ListItemButton
+                                                            key={lang}
+                                                            onClick={() => {
+                                                                changeLocalAction(lang as Locale);
+                                                                popupState.close();
+                                                            }}
                                                             sx={{
-                                                                flex: "1 1 auto",
-                                                                minWidth: "0px",
-                                                                marginTop: "4px",
-                                                                marginBottom: "4px"
+                                                                paddingLeft: "16px"
                                                             }}
                                                         >
-                                                            <Grid container>
-                                                                <Typography variant="body1" component="p">{lang === "en" ? "English" : "Khmer"}</Typography>
-                                                                <Typography variant="caption" component="span"
-                                                                            sx={(theme) => ({
-                                                                                marginLeft: "8px",
-                                                                                color: (theme.vars || theme).palette.text.secondary,
-                                                                            })}
-                                                                >{lang === "en" ? "(UK)" : "(KH)"}</Typography>
-                                                            </Grid>
-                                                        </ListItemText>
-                                                    </ListItemButton>
-                                                ))}
-                                            </List>
-                                        </Paper>
-                                    </ClickAwayListener>
+                                                            <ListItemText
+                                                                sx={{
+                                                                    flex: "1 1 auto",
+                                                                    minWidth: "0px",
+                                                                    marginTop: "4px",
+                                                                    marginBottom: "4px"
+                                                                }}
+                                                            >
+                                                                <Grid container>
+                                                                    <Typography variant="body1" component="p">{lang === "en" ? "English" : "Khmer"}</Typography>
+                                                                    <Typography variant="caption" component="span"
+                                                                                sx={(theme) => ({
+                                                                                    marginLeft: "8px",
+                                                                                    color: (theme.vars || theme).palette.text.secondary,
+                                                                                })}
+                                                                    >{lang === "en" ? "(UK)" : "(KH)"}</Typography>
+                                                                </Grid>
+                                                            </ListItemText>
+                                                        </ListItemButton>
+                                                    ))}
+                                                </List>
+                                            </Paper>
+                                        </ClickAwayListener>
+                                    </>
                                 </Fade>
                             )}
                         </Popper>
