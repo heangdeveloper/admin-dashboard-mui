@@ -39,13 +39,23 @@
                         "role": "Role",
                         "permission": "Permission"
                     }
-                },
+                }
+            }
+        },
+        "other": {
+            "name": "Other",
+            "item": {
                 "report": {
                     "name": "Report",
                     "subMenu": {
-                        "package": "Income",
-                        "trainer": "Expenses"
+                        "membership_report": "Member report",
+                        "revenue_report": "Income report",
+                        "payment_report": "Payment report",
+                        "expense_report": "Expense report"
                     }
+                },
+                "setting": {
+                    "name": "Setting"
                 }
             }
         }

@@ -39,13 +39,23 @@
                         "role": "តួនាទី",
                         "permission": "ការអនុញ្ញាត"
                     }
-                },
+                }
+            }
+        },
+        "other": {
+            "name": "ផ្សេងទៀត",
+            "item": {
                 "report": {
                     "name": "របាយការណ៍",
                     "subMenu": {
-                        "package": "ប្រាក់ចំណូល",
-                        "trainer": "ការចំណាយ"
+                        "membership_report": "របាយការណ៍សមាជិក",
+                        "revenue_report": "របាយការណ៍ចំណូល",
+                        "payment_report": "របាយការណ៍ការទូទាត់",
+                        "expense_report": "របាយការណ៍ចំណាយ"
                     }
+                },
+                "setting": {
+                    "name": "ការកំណត់"
                 }
             }
         }

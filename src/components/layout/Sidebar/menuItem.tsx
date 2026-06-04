@@ -7,7 +7,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 
-export const SideBarItem = [
+export const MenuItem = [
     {
         group: "overview.name",
         items: [

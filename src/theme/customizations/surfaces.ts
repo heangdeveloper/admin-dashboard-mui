@@ -7,5 +7,14 @@ export const surfacesCustomizations: Components<Theme> = {
 
             }
         }
+    },
+    MuiAppBar: {
+        styleOverrides: {
+            root: ({ theme }) => ({
+                ...theme.applyStyles('dark', {
+                    backgroundColor: "#333"
+                })
+            })
+        }
     }
 }

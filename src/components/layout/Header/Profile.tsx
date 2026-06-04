@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useRouter } from "next/navigation";
 
 import Button from "@mui/material/Button"
 import Avatar from "@mui/material/Avatar";
@@ -18,12 +19,13 @@ import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemButton from '@mui/material/ListItemButton';
-import Switch from '@mui/material/Switch';
 import Chip from "@mui/material/Chip";
 
-import {useTranslations} from "next-intl";
+import ColorModeSwitch from "@/theme/ColorModeSwitch"
+
+import {useTranslations, useLocale, Locale} from "next-intl";
 import { changeLocalAction } from "@/actions/change-locale"
-import { LOCALES, type Locale } from "@/constants/locales"
+import { LOCALES } from "@/constants/locales";
 
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import NightlightOutlinedIcon from '@mui/icons-material/NightlightOutlined';
@@ -32,7 +34,9 @@ import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutl
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 export default function Profile() {
+    const router = useRouter();
     const t = useTranslations("header");
+    const locale = useLocale() as Locale;
     const [languageAnchor, setLanguageAnchor] = React.useState<HTMLElement | null>(null);
     const openLanguage = Boolean(languageAnchor);
 
@@ -45,7 +49,9 @@ export default function Profile() {
 
     const handleChangeLocale = async (locale: Locale) => {
         await changeLocalAction(locale);
+        router.refresh();
     };
+
     return (
         <>
             <PopupState variant="popper">
@@ -160,9 +166,7 @@ export default function Profile() {
                                                                     <Typography variant="h4" component="p">{t("profile.dark_mode")}</Typography>
                                                                 }
                                                             ></ListItemText>
-                                                            <Switch
-                                                                size="small"
-                                                            />
+                                                            <ColorModeSwitch/>
                                                         </ListItem>
                                                         <PopupState variant="popper">
                                                             {(popupState) => (
@@ -188,7 +192,10 @@ export default function Profile() {
                                                                                         alignItems: "center",
                                                                                     }}
                                                                                 >
-
+                                                                                    {t(
+                                                                                        LOCALES.find((item) => item.value === locale)?.label ??
+                                                                                        "profile.language.value.english"
+                                                                                    )}
                                                                                     <ArrowForwardIosOutlinedIcon sx={{
                                                                                         width: "18px",
                                                                                         height: "18px",
@@ -251,6 +258,7 @@ export default function Profile() {
                                                                                                 {LOCALES.map((item) => (
                                                                                                     <ListItemButton
                                                                                                         key={item.value}
+                                                                                                        selected={locale === item.value}
                                                                                                         onClick={async () => {
                                                                                                             await handleChangeLocale(item.value);
                                                                                                             handleLanguageClose();

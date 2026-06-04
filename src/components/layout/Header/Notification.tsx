@@ -214,7 +214,6 @@ export default function Notification() {
                                         })}
                                     ></Box>
                                 </ListItemButton>
-
                             </List>
                         </SimpleBar>
                     </Box>
